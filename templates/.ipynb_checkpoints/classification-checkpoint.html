@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>X-Ray Analysis</title>
+  </head>
+  <body>
+<center>
+    {% if image %}
+      <h2>X-ray</h2>
+      <img src="../static/uploads/{{ image }}" width="300",height="300">
+	
+      <h3>Result:  {{ result }}</h3>
+	<h3>Probability:  {{ probability }}</h3>
+
+    {% else %}
+      <h1>No image</h1>
+    {% endif %}
+
+  </body>
+</html>
